@@ -1,0 +1,19 @@
+OASISFormat: 0.4
+Name:        capnp_rpc
+Version:     0.0.1
+Synopsis:    Cap'n Proto RPC
+Authors:     Matthew Maurer <matthew.r.maurer@gmail.com>
+Maintainers: Matthew Maurer <matthew.r.maurer@gmail.com>
+License:     MIT
+Copyrights:  (C) 2015 Matthew Maurer
+Plugins:     META (0.4),
+             DevFiles (0.4)
+BuildTools: ocamlbuild
+BuildDepends: core_kernel,
+              capnp
+
+Library capnp_rpc
+  Path:            lib
+  FindLibName:     capnp_rpc
+  CompiledObject:  best
+  Modules:         Capnp_rpc
